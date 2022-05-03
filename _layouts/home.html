@@ -67,7 +67,7 @@ show_title: false
   }
 
   /* Container around content */
-  .container {
+  .container-timeline {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -75,7 +75,7 @@ show_title: false
   }
 
   /* The circles on the timeline */
-  .container::after {
+  .container-timeline::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -149,14 +149,14 @@ show_title: false
     }
 
     /* Full-width containers */
-    .container {
+    .container-timeline {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
-    .container::before {
+    .container-timeline::before {
       left: 60px;
       border: medium solid white;
       border-width: 10px 10px 10px 0;
@@ -177,7 +177,7 @@ show_title: false
 </style>
 
 <div class="timeline">
-  <div class="container left">
+  <div class="container-timeline left">
     <div class="content">
       <a href="https://xuxey.github.io/gender-cinema/2022/04/29/pre-70s.html">
       <h2>Gender Equality in Pre-1970s Bollywood</h2>
@@ -186,7 +186,7 @@ show_title: false
     </div>
   </div>
 
-  <div class="container right">
+  <div class="container-timeline right">
     <div class="content">
       <a href="https://xuxey.github.io/gender-cinema/2022/04/30/1970s.html">
         <h2>Gender representation in the fiery 1970s</h2>
@@ -195,7 +195,7 @@ show_title: false
     </div>
   </div>
 
-  <div class="container left">
+  <div class="container-timeline left">
     <div class="content">
       <a href="https://xuxey.github.io/gender-cinema/2022/05/01/1980s.html">
         <h2>Gender equality in 1980s</h2>
@@ -204,7 +204,7 @@ show_title: false
     </div>
   </div>
 
-  <div class="container right">
+  <div class="container-timeline right">
     <div class="content">
       <a href="https://xuxey.github.io/gender-cinema/2022/05/02/1990s.html">
         <h2>Gender equality in 1990s</h2>
@@ -213,7 +213,7 @@ show_title: false
     </div>
   </div>
 
-  <div class="container left">
+  <div class="container-timeline left">
     <div class="content">
       <a href="https://xuxey.github.io/gender-cinema/2022/05/03/2000s.html">
         <h2>Gender equality in 2000s</h2>
@@ -222,7 +222,7 @@ show_title: false
     </div>
   </div>
 
-  <div class="container right">
+  <div class="container-timeline right">
     <div class="content">
       <a href="https://xuxey.github.io/gender-cinema/2022/05/03/2010s.html">
         <h2>Gender equality in 2010s</h2>
