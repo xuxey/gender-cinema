@@ -43,13 +43,19 @@ show_title: false
 <!-- {{ content }} -->
 
 <style>
-  * {
+  /* * {
     box-sizing: border-box;
+  } */
+
+  .surround {
+    position: relative;
+    margin-top: x3%;
+    height: 1000px;
   }
 
   /* The actual timeline (the vertical ruler) */
   .timeline {
-    position: relative;
+    position: absolute;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -59,7 +65,7 @@ show_title: false
     content: '';
     position: absolute;
     width: 6px;
-    background-color: rgb(105, 105, 105);
+    /* background-color: rgb(105, 105, 105); */
     top: 0;
     bottom: 0;
     left: 50%;
@@ -71,7 +77,7 @@ show_title: false
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 50%;
+    width: 100%;
   }
 
   /* The circles on the timeline */
@@ -95,7 +101,7 @@ show_title: false
 
   /* Place the container to the right */
   .right {
-    left: 50%;
+    left: 20%;
   }
 
   /* Add arrows to the left container (pointing right) */
@@ -107,9 +113,9 @@ show_title: false
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid white;
+    border: medium solid #FF9F55;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #FF9F55;
   }
 
   /* Add arrows to the right container (pointing left) */
@@ -121,9 +127,9 @@ show_title: false
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid #FF9F55;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #FF9F55 transparent transparent;
   }
 
   /* Fix the circle for containers on the right side */
@@ -158,9 +164,9 @@ show_title: false
     /* Make sure that all arrows are pointing leftwards */
     .container-timeline::before {
       left: 60px;
-      border: medium solid white;
+      border: medium solid #ff8b50;
       border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+      border-color: transparent #ff8b50 transparent transparent;
     }
 
     /* Make sure all circles are at the same spot */
@@ -176,6 +182,7 @@ show_title: false
   }
 </style>
 
+<div class="surround">
 <div class="timeline">
   <div class="container-timeline left">
     <div class="content">
@@ -231,4 +238,5 @@ show_title: false
     </div>
   </div>
 
+</div>
 </div>
