@@ -1,41 +1,41 @@
 ---
 layout: articles
 titles:
-  # @start locale config
-  en      : &EN       Home
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  主页
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  主頁
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       홈
-  ko-KR   : *KO
-  fr      : &FR       Accueil
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
-  tr      : &TR       Ana Sayfa
-  # @end locale config
+# @start locale config
+en : &EN Home
+en-GB : *EN
+en-US : *EN
+en-CA : *EN
+en-AU : *EN
+zh-Hans : &ZH_HANS 主页
+zh : *ZH_HANS
+zh-CN : *ZH_HANS
+zh-SG : *ZH_HANS
+zh-Hant : &ZH_HANT 主頁
+zh-TW : *ZH_HANT
+zh-HK : *ZH_HANT
+ko : &KO 홈
+ko-KR : *KO
+fr : &FR Accueil
+fr-BE : *FR
+fr-CA : *FR
+fr-CH : *FR
+fr-FR : *FR
+fr-LU : *FR
+tr : &TR Ana Sayfa
+# @end locale config
 show_title: false
-# articles:
-#   data_source: paginator.posts
-#   article_type: BlogPosting
-#   show_cover: false
-#   show_excerpt: true
-#   show_readmore: true
-#   show_info: true
+articles:
+data_source: paginator.posts
+article_type: BlogPosting
+show_cover: false
+show_excerpt: true
+show_readmore: true
+show_info: true
 ---
-<!-- <div class="layout--home">
+<div class="layout--home">
   {%- include paginator.html -%}
-</div> -->
+</div>
 <script>
   {%- include scripts/home.js -%}
 </script>
@@ -49,14 +49,14 @@ show_title: false
 
   .surround {
     position: relative;
-    margin-top: x3%;
-    height: 1000px;
+    margin-top: 3%;
+    height: 700px;
   }
 
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: absolute;
-    max-width: 1200px;
+    max-width: fit-content;
     margin: 0 auto;
   }
 
@@ -77,7 +77,7 @@ show_title: false
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 100%;
+    width: 90%;
   }
 
   /* The circles on the timeline */
@@ -141,7 +141,7 @@ show_title: false
   .content {
     color: rgb(241, 241, 241);
     padding: 20px 30px;
-    background-color: #ff8b50;
+    background-color: #ffa34d;
     position: relative;
     border-radius: 6px;
   }
@@ -183,60 +183,54 @@ show_title: false
 </style>
 
 <div class="surround">
-<div class="timeline">
-  <div class="container-timeline left">
-    <div class="content">
-      <a href="https://xuxey.github.io/gender-cinema/2022/04/29/pre-70s.html">
-      <h2>Gender Equality in Pre-1970s Bollywood</h2>
-      </a>
-      <p>Lorem ipsum dolor sit amet</p>
+  <div class="timeline">
+    <div class="container-timeline left">
+      <div class="content">
+        <a href="/2022/04/29/pre-70s.html">
+          <h3>Pre 1970s: Awareness for gender equality</p></h3>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="container-timeline right">
-    <div class="content">
-      <a href="https://xuxey.github.io/gender-cinema/2022/04/30/1970s.html">
-        <h2>Gender representation in the fiery 1970s</h2>
-      </a>
-      <p>Lorem ipsum dolor sit amet</p>
+    <div class="container-timeline right">
+      <div class="content">
+        <a href="/2022/04/30/1970s.html">
+          <h3>Gender representation in the 1970s' Parallel Cinema</h3>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="container-timeline left">
-    <div class="content">
-      <a href="https://xuxey.github.io/gender-cinema/2022/05/01/1980s.html">
-        <h2>Gender equality in 1980s</h2>
-      </a>
-      <p>Lorem ipsum dolor sit amet</p>
+    <div class="container-timeline left">
+      <div class="content">
+        <a href="/2022/05/01/1980s.html">
+          <h3><i>"New Indian Woman"</i> in 1980s Bollywood</h3>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="container-timeline right">
-    <div class="content">
-      <a href="https://xuxey.github.io/gender-cinema/2022/05/02/1990s.html">
-        <h2>Gender equality in 1990s</h2>
-      </a>
-      <p>Lorem ipsum dolor sit amet</p>
+    <div class="container-timeline right">
+      <div class="content">
+        <a href="/2022/05/02/1990s.html">
+          <h3>Gender equality in 1990s</h3>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="container-timeline left">
-    <div class="content">
-      <a href="https://xuxey.github.io/gender-cinema/2022/05/03/2000s.html">
-        <h2>Gender equality in 2000s</h2>
-      </a>
-      <p>Lorem ipsum dolor sit amet</p>
+    <div class="container-timeline left">
+      <div class="content">
+        <a href="/2022/05/03/2000s.html">
+          <h3>Gender equality in 2000s</h3>
+        </a>
+      </div>
     </div>
-  </div>
 
-  <div class="container-timeline right">
-    <div class="content">
-      <a href="https://xuxey.github.io/gender-cinema/2022/05/03/2010s.html">
-        <h2>Gender equality in 2010s</h2>
-      </a>
-      <p>Lorem ipsum dolor sit amet</p>
+    <div class="container-timeline right">
+      <div class="content">
+        <a href="/2022/05/03/2010s.html">
+          <h3>Gender equality in 2010s</h3>
+        </a>
+      </div>
     </div>
-  </div>
 
-</div>
+  </div>
 </div>
